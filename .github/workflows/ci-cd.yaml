@@ -15,7 +15,7 @@ jobs:
       - name: setup .net 3
         uses: actions/setup-dotnet@v1
         with:
-          dotnet-version: '3.0.x'
+          dotnet-version: '5.0.x'
 
       - name: restore dependencies 
         run: dotnet restore
