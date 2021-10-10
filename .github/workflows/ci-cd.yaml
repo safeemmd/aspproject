@@ -1,0 +1,25 @@
+name: Continous Inegration and Deployment
+
+on:
+  push:
+    branch:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: check out code
+        uses: actions/checkout@v2
+
+      - name: setup .net 3
+        uses: actions/setupdotnet@v1
+        with:
+          dotnet-version: '3.0.x'
+
+      - name: restore dependencies 
+        run: dotnet restore
+
+      - name: build app
+        run: dotnet build -c release --no-restore
+         
