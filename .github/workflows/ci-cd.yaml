@@ -3,7 +3,7 @@ name: Continous Inegration and Deployment
 on:
   push:
     branch:
-      - master
+      - dev
 
 jobs:
   build:
