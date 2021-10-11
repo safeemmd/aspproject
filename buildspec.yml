@@ -3,8 +3,8 @@ phases:
   build:
     commands:
       - dotnet restore
-      - dotnet build -c release --no-restore
-      - dotnet publish -c release -o C:\Users\91937\aspproj\aspproject\asptest\wwwroot\buildoutput C:\Users\91937\aspproj\aspproject\asptest\wwwroot\asptest.csproj
+      - dotnet build -c release
+      - dotnet publish -c release -o .\Users\91937\aspproj\aspproject\asptest\wwwroot\buildoutput .\Users\91937\aspproj\aspproject\asptest\wwwroot\asptest.csproj
 
 
 
