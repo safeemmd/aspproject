@@ -4,7 +4,7 @@ phases:
     commands:
       - dotnet restore
       - dotnet build -c release
-      
+      - dotnet publish -c release -o ./asptest/wwwroot/buildoutput ./asptest/wwwroot/asptest.csproj
 
 
 
